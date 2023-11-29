@@ -5,7 +5,6 @@ export const getFieldArrayInputs = (fields, inputProps, fieldProps) => {
   fields.forEach((obj, index) => {
     groups = [];
     Object.keys(obj).forEach((key, groupIndex) => {
-      console.log("this is key", key);
       if (key !== "id") {
         const primaryProps = {
           name: `${inputProps.name}.[${index}].${key}`,
