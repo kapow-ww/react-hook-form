@@ -1,24 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Container, Box, Typography } from "@mui/material";
+import FormDemo from "./screen/form-demo";
+import { grey } from "@mui/material/colors";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container maxWidth="md" sx={{ backgroundColor: grey[200] }}>
+      <Box sx={{ my: 4 }}>
+        <FormDemo />
+      </Box>
+    </Container>
   );
 }
 
